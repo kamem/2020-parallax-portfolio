@@ -1,5 +1,5 @@
 <template>
-  <section :class="['portfolioItem', color]">
+  <section :class="['portfolioItem', color]" :id="title">
     <h2 class="portfolioItemTitle">{{title}}</h2>
     <slot />
   </section>
@@ -10,7 +10,7 @@ export default {
   props: {
     title: String,
     color: String
-  }
+  },
 }
 </script>
 
@@ -19,6 +19,7 @@ export default {
   background-color: #ccc;
   height: 600px;
   overflow: hidden;
+  position: relative;
   &.pink {
     background-color: #FFADD4;
   }
