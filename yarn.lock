@@ -9605,10 +9605,10 @@ schema-utils@^2.0.0, schema-utils@^2.5.0, schema-utils@^2.6.1, schema-utils@^2.6
     ajv "^6.12.4"
     ajv-keywords "^3.5.2"
 
-scroll-parallax-effect@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/scroll-parallax-effect/-/scroll-parallax-effect-0.2.1.tgz#6b924793d6b9138fe9577097c2533b529f0ffdfa"
-  integrity sha512-+VomvKQFLH2PjImP1Hmr0fCZjyNl6r6T7Ul1ujt9dz9Ic6fk6UlEjzwpj6YKRbCVGWYd3UIy9E+dWCW3Kbks7Q==
+scroll-parallax-effect@0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/scroll-parallax-effect/-/scroll-parallax-effect-0.2.3.tgz#afc8bb1a73470fe498e22c0c3785ae32f9267e75"
+  integrity sha512-xQFtpVRUKm1SRzW4ia/IC1qb8C0CgcWs5wU0EzaUhfvhsbF1fwWFoP6Jpg6LgVywRrkUCDq7+7H61ah7CVTa9g==
   dependencies:
     "@babel/core" "^7.7.5"
     "@babel/preset-env" "^7.7.5"

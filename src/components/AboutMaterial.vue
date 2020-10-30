@@ -3,6 +3,7 @@
     v-parallax-speed
     styles="top"
     :speed="0.2"
+    :targetPercentage="0.02"
     contentScrollPosition="#About"
   ><img src="@/assets/apple1.png" /></figure>
 
@@ -10,6 +11,7 @@
     v-parallax-speed
     styles="top"
     :speed="-0.3"
+    :targetPercentage="0.02"
     contentScrollPosition="#About"
   ><img src="@/assets/apple2.png" /></figure>
 
@@ -22,6 +24,7 @@
       transform: `scale(${Math.random() + 0.5})`,
     }"
     class="aplleico"
+    :targetPercentage="0.05"
 
     v-parallax-speed
     styles="top"

@@ -5,7 +5,10 @@
       <About />
       <AboutMaterial />
     </PortfolioItem>
-    <PortfolioItem title="Works" color="purple" />
+    <PortfolioItem v-parallax-timing :eventTriggerPercentage="0.2" title="Works" color="purple">
+      <Thumbnails :items="items" />
+      <WorkMaterial />
+    </PortfolioItem>
   </div>
 </template>
 
@@ -14,13 +17,55 @@
 import PortfolioItem from '@/components/PortfolioItem.vue'
 import About from '@/components/About.vue'
 import AboutMaterial from '@/components/AboutMaterial.vue'
+import WorkMaterial from '@/components/WorkMaterial.vue'
+import Thumbnails from '@/components/Thumbnails.vue'
 
 export default {
   name: 'Home',
   components: {
     About,
     AboutMaterial,
-    PortfolioItem
+    WorkMaterial,
+    PortfolioItem,
+    Thumbnails
+  },
+  setup() {
+    return {
+      items: [
+        {
+          path: '/img/work.jpg',
+          url: '#'
+        },
+        {
+          path: '/img/work.jpg',
+          url: '#'
+        },
+        {
+          path: '/img/work.jpg',
+          url: '#'
+        },
+        {
+          path: '/img/work.jpg',
+          url: '#'
+        },
+        {
+          path: '/img/work.jpg',
+          url: '#'
+        },
+        {
+          path: '/img/work.jpg',
+          url: '#'
+        },
+        {
+          path: '/img/work.jpg',
+          url: '#'
+        },
+        {
+          path: '/img/work.jpg',
+          url: '#'
+        }
+      ]
+    }
   }
 }
 </script>

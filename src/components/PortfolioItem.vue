@@ -17,7 +17,7 @@ export default {
 <style lang="scss" scoped>
 .portfolioItem {
   background-color: #ccc;
-  height: 600px;
+  min-height: 600px;
   overflow: hidden;
   position: relative;
   &.pink {
@@ -34,5 +34,7 @@ export default {
   font-weight: normal;
   text-align: center;
   color: #fff;
+  position: relative;
+  z-index: 1;
 }
 </style>
