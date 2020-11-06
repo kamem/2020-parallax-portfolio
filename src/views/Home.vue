@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <Main />
     <PortfolioItem title="About" color="pink">
       <About />
       <AboutMaterial />
@@ -15,6 +15,7 @@
 <script>
 // @ is an alias to /src
 import PortfolioItem from '@/components/PortfolioItem.vue'
+import Main from '@/components/Main.vue'
 import About from '@/components/About.vue'
 import AboutMaterial from '@/components/AboutMaterial.vue'
 import WorkMaterial from '@/components/WorkMaterial.vue'
@@ -23,6 +24,7 @@ import Thumbnails from '@/components/Thumbnails.vue'
 export default {
   name: 'Home',
   components: {
+    Main,
     About,
     AboutMaterial,
     WorkMaterial,

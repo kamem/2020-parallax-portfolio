@@ -5,7 +5,7 @@
     v-for="i of 15" 
     :key="i"
     :style="{
-      top: randomPositionTop(1000),
+      top: randomPosition(1000),
       left: randomPosition(2000),
       transform: `scale(${Math.random() + 0.5})`,
       transitionDelay: `${Math.random()}s`
