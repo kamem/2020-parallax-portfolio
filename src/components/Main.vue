@@ -10,11 +10,37 @@
     
   </header>
 
-  <figure class="orange"><img src="@/assets/orange.png" /></figure>
+  <figure
+    class="orange"
+    v-parallax-speed
+    :contentScrollPosition="0"
+    styles="transform"
+    contentScrollPositionStyleValue="rotate(0deg)"
+    :speed="0.02"
+    :targetPercentage="0.05"
+  ><img src="@/assets/orange.png" /></figure>
+
+  <div class="onrageicons">
+    <OrangeIco class="orangeico" v-for="i of 6" :key="i" />
+  </div>
 </template>
 
-
 <script>
+import OrangeIco from '@/components/icon/OrangeIco.vue'
+export default {
+  components: {
+    OrangeIco
+  },
+  setup() {
+    const randomPosition = (width) => {
+      return Math.random() * width  - width / 2
+    }
+
+    return {
+      randomPosition
+    }
+  }
+}
 </script>
 
 <style lang="scss">
@@ -63,5 +89,33 @@
   top: 15px;
   left: 0;
   right: 0;
+}
+
+.orangeico {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.orangeico:nth-child(1) {
+  transform: translate(-330px, 40px) rotate(-40deg);
+}
+.orangeico:nth-child(2) {
+  transform: translate(330px, 40px) rotate(40deg);
+}
+.orangeico:nth-child(3) {
+  transform: translate(-420px, 270px) rotate(-90deg) scale(0.8);
+}
+.orangeico:nth-child(4) {
+  transform: translate(420px, 270px) rotate(90deg) scale(0.8);
+}
+.orangeico:nth-child(5) {
+  transform: translate(-330px, 490px) rotate(-130deg);
+}
+.orangeico:nth-child(6) {
+  transform: translate(330px, 490px) rotate(130deg);
 }
 </style>

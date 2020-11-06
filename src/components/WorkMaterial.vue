@@ -7,8 +7,17 @@
     :style="{
       top: randomPosition(1000),
       left: randomPosition(2000),
-      transform: `scale(${Math.random() + 0.5})`,
-      transitionDelay: `${Math.random()}s`
+    }"
+    v-parallax-fit
+    :start="['#Works', -Math.random() * 200]"
+    end="#Works"
+    :fromStyle="{
+      transform: 'scale(0)',
+      opacity: 0,
+    }"
+    :toStyle="{
+      transform: `scale(${Math.random() * 0.5 + 0.5})`,
+      opacity: 1,
     }"
     class="grapeico"
   />
@@ -42,9 +51,6 @@ export default {
     transform: scale(1);
     opacity: 1;
   }
-  & .grapeico {
-    opacity: 1;
-  }
 }
 .grape {
   margin: 0 auto;
@@ -59,8 +65,5 @@ export default {
 }
 .grapeico {
   position: absolute;
-
-  opacity: 0;
-  transition: all 0.3s;
 }
 </style>

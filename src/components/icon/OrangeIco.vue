@@ -1,0 +1,9 @@
+<template>
+<svg width="52" height="72" viewBox="0 0 52 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M51.6542 12.0366C29.6719 -8.29706 8.60547 3.56424 0.820068 12.0366L25.5502 71.1141L51.6542 12.0366Z" fill="#FFD98F"/>
+</svg>
+
+</template>
+
+<style lang="scss" scoped>
+</style>
