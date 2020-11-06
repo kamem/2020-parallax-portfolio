@@ -22,7 +22,7 @@ export default {
 }
 .thumbnails {
   padding: 0 8px;
-  margin: 0 auto;
+  margin: 40px auto 0;
   display: flex;
   flex-wrap: wrap;
   max-width: calc(var(--thumbnail-width) * var(--thumbnail-num) + var(--thumbnail-margin) * var(--thumbnail-num));

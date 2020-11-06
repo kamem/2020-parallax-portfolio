@@ -25,6 +25,8 @@ export default {
   display: flex;
   justify-content: center;
   list-style-type: none;
+  position: relative;
+  z-index: 10;
 }
 
 .sns-item {

@@ -24,6 +24,7 @@ export default {
 
 <style lang="scss" scoped>
 .about {
+  margin: 40px 0;
   display: flex;
   flex-wrap: wrap;
   color: #fff;
